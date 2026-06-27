@@ -20,7 +20,13 @@ export function JoinSection() {
           </p>
 
           <SignupForm />
-          <SurveyLink />
+
+          <div style={{ marginTop: 36, paddingTop: 28, borderTop: "1px solid rgba(255,255,255,0.18)" }}>
+            <p className="sub-sec center" style={{ marginBottom: 16, fontSize: 15 }}>
+              {t.survey.title} {t.survey.subtitle}
+            </p>
+            <SurveyLink />
+          </div>
         </div>
       </div>
     </section>

@@ -67,7 +67,10 @@ export type Translation = {
     subtitle: string;
   };
   survey: {
-    prompt: string;
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    cta: string;
     thanks: string;
   };
   footer: {
@@ -93,9 +96,9 @@ export const translations: Record<Locale, Translation> = {
     },
     signup: {
       placeholder: "you@email.com",
-      button: "Stay up to date",
+      button: "Join the waitlist",
       alreadyJoined: "You’re already on the list. We’ve got you.",
-      willEmail: (email) => `We'll email ${email} the moment Payo lands.`,
+      willEmail: (email) => `We'll email ${email} the moment Payyo lands.`,
       successTitle: "You’re on the list!",
     },
     howItWorks: {
@@ -112,7 +115,7 @@ export const translations: Record<Locale, Translation> = {
     whyPayyo: {
       eyebrow: "Why Payyo",
       title: "The end of “just send me a Tikkie”",
-      subtitle: "The old way is slow and inconvenient. Payo solves it on the spot.",
+      subtitle: "The old way is slow and inconvenient. Payyo solves it on the spot.",
       oldWayTag: "The old way",
       newWayTag: "With Payyo",
       oldWayItems: [
@@ -147,28 +150,31 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Built for everywhere",
-          description: "Using Payo abroad? If receipts are in a different language, Payo translates them into your preferred language.",
+          description: "Using Payyo abroad? If receipts are in a different language, Payyo translates them into your preferred language.",
         },
       ],
     },
     video: {
       eyebrow: "See it in 40 seconds",
-      title: "Watch how Payo works",
-      subtitle: "Watch how Payo works and see how easy splitting bills becomes",
+      title: "Watch how Payyo works",
+      subtitle: "Watch how Payyo works and see how easy splitting bills becomes",
       playAria: "Play explainer (coming soon)",
       caption: "Explainer animation · coming soon",
     },
     join: {
       eyebrow: "Be first in line",
-      title: "Stay up to date with Payo",
+      title: "Join the waitlist",
       subtitle: "Drop your email and we’ll ping you the day it goes live. No spam, just the launch.",
     },
     survey: {
-      prompt: "Got 2 minutes? Help shape Payyo — take the survey",
+      eyebrow: "Help shape Payyo",
+      title: "Got 2 minutes?",
+      subtitle: "We're building this for you. Tell us how you split bills today and what would make this a no-brainer to use.",
+      cta: "Take the 2-minute survey",
       thanks: "Survey link coming soon — thanks for the interest!",
     },
     footer: {
-      note: "© 2026 Payo · Split the bill. Skip the headache.",
+      note: "© 2026 Payyo · Split the bill. Skip the headache.",
     },
   },
   nl: {
@@ -188,9 +194,9 @@ export const translations: Record<Locale, Translation> = {
     },
     signup: {
       placeholder: "jij@email.com",
-      button: "Blijf op de hoogte",
+      button: "Meld je aan",
       alreadyJoined: "Je staat al op de lijst. We hebben je gegevens.",
-      willEmail: (email) => `We mailen ${email} zodra Payo live gaat.`,
+      willEmail: (email) => `We mailen ${email} zodra Payyo live gaat.`,
       successTitle: "Je staat op de lijst!",
     },
     howItWorks: {
@@ -207,7 +213,7 @@ export const translations: Record<Locale, Translation> = {
     whyPayyo: {
       eyebrow: "Waarom Payyo",
       title: "Het einde van “stuur me anders even een Tikkie”",
-      subtitle: "De oude manier is traag en onhandig. Payo lost het direct op.",
+      subtitle: "De oude manier is traag en onhandig. Payyo lost het direct op.",
       oldWayTag: "De oude manier",
       newWayTag: "Met Payyo",
       oldWayItems: [
@@ -242,28 +248,31 @@ export const translations: Record<Locale, Translation> = {
         },
         {
           title: "Overal te gebruiken",
-          description: "Payo in het buitenland gebruiken? Staat de bon in een andere taal? Payo vertaalt hem naar jouw voorkeurstaal.",
+          description: "Payyo in het buitenland gebruiken? Staat de bon in een andere taal? Payyo vertaalt hem naar jouw voorkeurstaal.",
         },
       ],
     },
     video: {
       eyebrow: "Bekijk het in 40 seconden",
-      title: "Bekijk hoe Payo werkt",
-      subtitle: "Bekijk hoe Payo werkt en zie hoe makkelijk rekeningen splitten wordt",
+      title: "Bekijk hoe Payyo werkt",
+      subtitle: "Bekijk hoe Payyo werkt en zie hoe makkelijk rekeningen splitten wordt",
       playAria: "Speel uitlegvideo (binnenkort beschikbaar)",
       caption: "Uitlegvideo · binnenkort beschikbaar",
     },
     join: {
       eyebrow: "Wees er als eerste bij",
-      title: "Blijf op de hoogte van Payo",
+      title: "Meld je aan voor de wachtlijst",
       subtitle: "Laat je e-mailadres achter en we laten het je weten zodra we live gaan. Geen spam, alleen de lancering.",
     },
     survey: {
-      prompt: "2 minuutjes? Help Payo vormgeven — doe de enquête",
+      eyebrow: "Help Payyo vormgeven",
+      title: "Heb je 2 minuutjes?",
+      subtitle: "We bouwen dit voor jou. Vertel ons hoe je nu rekeningen splitst en wat dit voor jou een no-brainer zou maken.",
+      cta: "Doe de 2-minuten enquête",
       thanks: "Enquêtelink volgt binnenkort — bedankt voor je interesse!",
     },
     footer: {
-      note: "© 2026 Payo · Split de rekening. Sla het gedoe over.",
+      note: "© 2026 Payyo · Split de rekening. Sla het gedoe over.",
     },
   },
 };

@@ -1,6 +1,7 @@
 "use client";
 
 import { SignupForm } from "./SignupForm";
+import { SurveyLink } from "./SurveyLink";
 import { useLanguage } from "@/lib/LanguageProvider";
 
 export function Hero() {
@@ -17,6 +18,7 @@ export function Hero() {
         <p className="lede">{t.hero.lede}</p>
 
         <SignupForm />
+        <SurveyLink variant="plain" />
       </div>
     </header>
   );
