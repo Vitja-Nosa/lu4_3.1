@@ -23,6 +23,9 @@ jobs:
           node-version: 20
       - run: npm ci
       - run: npm run build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: https://tnvjjoeqybscsqybzvpl.supabase.co
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_5CYID8isMj3qp_Y1JzZLYw_QgD9p-OU
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out

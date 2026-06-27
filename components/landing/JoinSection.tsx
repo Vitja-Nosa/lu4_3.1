@@ -1,19 +1,22 @@
+"use client";
+
 import { SignupForm } from "./SignupForm";
 import { SurveyLink } from "./SurveyLink";
+import { useLanguage } from "@/lib/LanguageProvider";
 
 export function JoinSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="section-pad" id="join">
       <div className="wrap">
         <div className="cta-band" style={{ textAlign: "center" }}>
-          <span className="eyebrow">
-            Be first in line
-          </span>
+          <span className="eyebrow">{t.join.eyebrow}</span>
           <h2 className="h-sec center" style={{ marginTop: 16 }}>
-            Stay up to date with Payo
+            {t.join.title}
           </h2>
           <p className="sub-sec center" style={{ marginBottom: 28 }}>
-            Drop your email and we’ll ping you the day it goes live. No spam, just the launch.
+            {t.join.subtitle}
           </p>
 
           <SignupForm />

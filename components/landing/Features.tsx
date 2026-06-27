@@ -1,33 +1,36 @@
-import { features } from "@/data/landing-content";
+"use client";
+
+import { useLanguage } from "@/lib/LanguageProvider";
+import { featuresMeta } from "@/lib/content";
 
 export function Features() {
+  const { t } = useLanguage();
+
   return (
     <section className="section-pad" id="features">
       <div className="wrap center">
-        <span className="eyebrow">
-          Built different
-        </span>
-        <h2 className="h-sec">Fast where it counts, fun where it doesn&rsquo;t</h2>
+        <span className="eyebrow">{t.features.eyebrow}</span>
+        <h2 className="h-sec">{t.features.title}</h2>
       </div>
       <div className="wrap">
         <div className="feat-grid">
-          {features.map((feature) => (
-            <div className="feat" key={feature.title}>
-              <div className="ic-bubble" style={{ background: feature.iconBg, color: feature.iconColor }}>
-                <i className={feature.icon} />
+          {featuresMeta.map((meta, i) => {
+            const text = t.features.items[i];
+            return (
+              <div className="feat" key={text.title}>
+                <div className="ic-bubble" style={{ background: meta.iconBg, color: meta.iconColor }}>
+                  <i className={meta.icon} />
+                </div>
+                {text.pillTag ? (
+                  <span className="pill-tag" style={{ background: meta.iconBg, color: meta.iconColor }}>
+                    {text.pillTag}
+                  </span>
+                ) : null}
+                <h3>{text.title}</h3>
+                <p>{text.description}</p>
               </div>
-              {feature.pillTag ? (
-                <span
-                  className="pill-tag"
-                  style={{ background: feature.iconBg, color: feature.iconColor }}
-                >
-                  {feature.pillTag}
-                </span>
-              ) : null}
-              <h3>{feature.title}</h3>
-              <p>{feature.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

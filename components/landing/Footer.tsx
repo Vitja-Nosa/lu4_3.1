@@ -1,4 +1,7 @@
+"use client";
+
 import { Logo } from "./Logo";
+import { useLanguage } from "@/lib/LanguageProvider";
 
 const socials = [
   { label: "Instagram", icon: "ph-fill ph-instagram-logo" },
@@ -7,6 +10,8 @@ const socials = [
 ];
 
 export function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer>
       <div className="wrap">
@@ -21,7 +26,7 @@ export function Footer() {
             </a>
           ))}
         </div>
-        <span className="foot-note">© 2026 Payo · Split the bill. Skip the headache.</span>
+        <span className="foot-note">{t.footer.note}</span>
       </div>
     </footer>
   );

@@ -1,9 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/lib/LanguageProvider";
 
 export function SurveyLink() {
   const [clicked, setClicked] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <div className="survey-link center">
@@ -16,11 +18,11 @@ export function SurveyLink() {
       >
         {clicked ? (
           <>
-            Survey link coming soon — thanks for the interest! <i className="ph ph-heart" />
+            {t.survey.thanks} <i className="ph ph-heart" />
           </>
         ) : (
           <>
-            Got 2 minutes? Help shape Payyo — take the survey <i className="ph ph-arrow-right" />
+            {t.survey.prompt} <i className="ph ph-arrow-right" />
           </>
         )}
       </a>

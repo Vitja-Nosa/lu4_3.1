@@ -1,29 +1,35 @@
-import { steps } from "@/data/landing-content";
+"use client";
+
+import { useLanguage } from "@/lib/LanguageProvider";
+import { stepsMeta } from "@/lib/content";
 
 export function HowItWorks() {
+  const { t } = useLanguage();
+
   return (
     <section className="section-pad" id="how">
       <div className="wrap center">
-        <span className="eyebrow">
-          How it works
-        </span>
-        <h2 className="h-sec">Four taps from receipt to settled</h2>
-        <p className="sub-sec">No manual entry. No app switching. No mental math at brunch.</p>
+        <span className="eyebrow">{t.howItWorks.eyebrow}</span>
+        <h2 className="h-sec">{t.howItWorks.title}</h2>
+        <p className="sub-sec">{t.howItWorks.subtitle}</p>
       </div>
       <div className="wrap">
         <div className="steps-grid">
-          {steps.map((step) => (
-            <div className="step" key={step.number}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <div className="ic-bubble" style={{ background: step.iconBg, color: step.iconColor }}>
-                  <i className={step.icon} />
+          {stepsMeta.map((meta, i) => {
+            const text = t.howItWorks.steps[i];
+            return (
+              <div className="step" key={meta.number}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <div className="ic-bubble" style={{ background: meta.iconBg, color: meta.iconColor }}>
+                    <i className={meta.icon} />
+                  </div>
+                  <span className="num">{meta.number}</span>
                 </div>
-                <span className="num">{step.number}</span>
+                <h3>{text.title}</h3>
+                <p>{text.description}</p>
               </div>
-              <h3>{step.title}</h3>
-              <p>{step.description}</p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

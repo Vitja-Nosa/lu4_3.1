@@ -1,24 +1,14 @@
-const STORAGE_KEY = "payyo_waitlist";
+import { supabase } from "./supabaseClient";
 
 const isEmail = (value: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 
-function readEmails(): string[] {
-  if (typeof window === "undefined") return [];
-  try {
-    return JSON.parse(window.localStorage.getItem(STORAGE_KEY) ?? "[]");
-  } catch {
-    return [];
+async function addEmail(email: string): Promise<{ alreadyJoined: boolean }> {
+  const { error } = await supabase.from("waitlist").insert({ email });
+  if (error) {
+    if (error.code === "23505") return { alreadyJoined: true };
+    throw error;
   }
+  return { alreadyJoined: false };
 }
 
-function addEmail(email: string): { alreadyJoined: boolean } {
-  const emails = readEmails();
-  const alreadyJoined = emails.includes(email);
-  if (!alreadyJoined) {
-    emails.push(email);
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(emails));
-  }
-  return { alreadyJoined };
-}
-
-export const waitlist = { isEmail, readEmails, addEmail };
+export const waitlist = { isEmail, addEmail };

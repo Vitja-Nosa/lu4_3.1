@@ -235,6 +235,37 @@ section {
   font-size: 14px;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 14px;
+  border: none;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.lang-switch i {
+  font-size: 15px;
+}
+
+.lang-switch:hover {
+  background: var(--surface-hover);
+  color: var(--text-secondary);
+}
+
+.lang-switch:active {
+  transform: scale(0.96);
+}
+
 /* ---- Shared typography ---- */
 .eyebrow {
   display: inline-flex;

@@ -2,18 +2,22 @@
 
 import { FormEvent, useRef, useState } from "react";
 import { useWaitlist } from "@/lib/useWaitlist";
+import { useLanguage } from "@/lib/LanguageProvider";
 
 export function SignupForm() {
   const { join } = useWaitlist();
+  const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [message, setMessage] = useState("");
   const fieldRef = useRef<HTMLLabelElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const honeypotRef = useRef<HTMLInputElement>(null);
 
-  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (honeypotRef.current?.value) return;
     const email = inputRef.current?.value.trim() ?? "";
-    const result = join(email);
+    const result = await join(email);
 
     if (!result.ok) {
       fieldRef.current?.animate(
@@ -30,9 +34,7 @@ export function SignupForm() {
     }
 
     setMessage(
-      result.alreadyJoined
-        ? "You’re already on the list. We’ve got you."
-        : `We'll email ${email} the moment Payo lands.`
+      result.alreadyJoined ? t.signup.alreadyJoined : t.signup.willEmail(email)
     );
     setSubmitted(true);
   };
@@ -44,7 +46,7 @@ export function SignupForm() {
           <i className="ph-fill ph-check" />
         </span>
         <div style={{ textAlign: "left" }}>
-          <b>You&rsquo;re on the list!</b>
+          <b>{t.signup.successTitle}</b>
           <small>{message}</small>
         </div>
       </div>
@@ -53,19 +55,28 @@ export function SignupForm() {
 
   return (
     <form className="signup-form d-flex flex-wrap gap-2" onSubmit={handleSubmit}>
+      <input
+        ref={honeypotRef}
+        type="text"
+        name="company"
+        tabIndex={-1}
+        autoComplete="off"
+        aria-hidden="true"
+        style={{ position: "absolute", width: 0, height: 0, opacity: 0, pointerEvents: "none" }}
+      />
       <label className="field" ref={fieldRef}>
         <i className="ph ph-envelope-simple" />
         <input
           ref={inputRef}
           type="email"
           name="email"
-          placeholder="you@email.com"
+          placeholder={t.signup.placeholder}
           required
           autoComplete="email"
         />
       </label>
       <button type="submit" className="btn btn-primary btn-lg">
-        Stay up to date
+        {t.signup.button}
       </button>
     </form>
   );
