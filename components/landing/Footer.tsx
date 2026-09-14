@@ -17,7 +17,7 @@ export function Footer() {
       <div className="wrap">
         <div className="foot-brand">
           <Logo size={30} />
-          <b>Payyo</b>
+          <b>Payo</b>
         </div>
         <div className="socials">
           {socials.map((social) => (

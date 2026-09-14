@@ -39,7 +39,7 @@ export type Translation = {
     // matched by index to lib/content.ts → stepsMeta
     steps: StepText[];
   };
-  whyPayyo: {
+  whyPayo: {
     eyebrow: string;
     title: string;
     subtitle: string;
@@ -81,9 +81,9 @@ export type Translation = {
 export const translations: Record<Locale, Translation> = {
   en: {
     meta: {
-      title: "Payyo — Split the bill. Skip the awkward.",
+      title: "Payo — Split the bill. Skip the awkward.",
       description:
-        "One person pays, everyone owes, nobody settles up. Payyo makes the whole \"who had what\" moment vanish.",
+        "One person pays, everyone owes, nobody settles up. Payo makes the whole \"who had what\" moment vanish.",
     },
     nav: {
       join: "Join waitlist",
@@ -92,32 +92,32 @@ export const translations: Record<Locale, Translation> = {
       eyebrow: "In Development · launching soon",
       titleLine1: "Split the bill.",
       titleHighlight: "Skip<br />the headache.",
-      lede: "Every time you go out with friends, someone fronts the bill. Then comes the group chat: who had what? Payyo cuts that out. Scan the receipt, everyone taps what they had, and you're done.",
+      lede: "Every time you go out with friends, someone fronts the bill. Then comes the group chat: who had what? Payo cuts that out. Scan the receipt, everyone taps what they had, and you're done.",
     },
     signup: {
       placeholder: "you@email.com",
       button: "Join the waitlist",
       alreadyJoined: "You’re already on the list. We’ve got you.",
-      willEmail: (email) => `We'll email ${email} the moment Payyo lands.`,
+      willEmail: (email) => `We'll email ${email} the moment Payo lands.`,
       successTitle: "You’re on the list!",
     },
     howItWorks: {
       eyebrow: "How it works",
       title: "Four taps from receipt to settled",
-      subtitle: "No manual entry. No app switching. No mental math at brunch.",
+      subtitle: "No manual entry. No app switching. No mental math at lunch.",
       steps: [
         { title: "Snap the receipt", description: "AI reads every line, dishes, drinks, tax and tip in about a second." },
-        { title: "Join the table", description: "Friends join instantly using a QR code or a shared link." },
-        { title: "Pick what you had", description: "Tap your items. Shared a bottle? Split it across the table in one tap." },
+        { title: "Invite people to the digital receipt", description: "Friends join instantly using a QR code or a shared link." },
+        { title: "Pick what you had", description: "Tap your items. Shared a bottle? Split it with a friend in one tap." },
         { title: "Pay your share", description: "One tap settles everything. Everyone's square before you leave the table." },
       ],
     },
-    whyPayyo: {
-      eyebrow: "Why Payyo",
+    whyPayo: {
+      eyebrow: "Why Payo",
       title: "The end of “just send me a Tikkie”",
-      subtitle: "The old way is slow and inconvenient. Payyo solves it on the spot.",
+      subtitle: "The old way is slow and inconvenient. Payo solves it on the spot.",
       oldWayTag: "The old way",
-      newWayTag: "With Payyo",
+      newWayTag: "With Payo",
       oldWayItems: [
         "One person fronts the whole bill and hopes for the best.",
         "Screenshots, group chats, and mental math at the table.",
@@ -141,23 +141,23 @@ export const translations: Record<Locale, Translation> = {
           pillTag: "AI Powered",
         },
         {
-          title: "Instant table joining",
-          description: "Scan the QR code or share the link with your friends. Everyone joins in seconds.",
+          title: "Instant digital receipt",
+          description: "Scan the QR code or share the link and everyone gets the digital receipt in seconds.",
         },
         {
-          title: "Shared a dish?",
-          description: "Split any item between whoever had it. No awkward math, just tap and divide.",
+          title: "Split any item",
+          description: "Only had part of a dish? Pay your part, your friend pays the rest. No awkward math, just tap and divide.",
         },
         {
           title: "Built for everywhere",
-          description: "Using Payyo abroad? If receipts are in a different language, Payyo translates them into your preferred language.",
+          description: "Using Payo abroad? If receipts are in a different language, Payo translates them into your preferred language.",
         },
       ],
     },
     video: {
       eyebrow: "See it in 40 seconds",
-      title: "Watch how Payyo works",
-      subtitle: "Watch how Payyo works and see how easy splitting bills becomes",
+      title: "Watch how Payo works",
+      subtitle: "Watch how Payo works and see how easy splitting bills becomes",
       playAria: "Play explainer (coming soon)",
       caption: "Explainer animation · coming soon",
     },
@@ -167,21 +167,21 @@ export const translations: Record<Locale, Translation> = {
       subtitle: "Drop your email and we’ll ping you the day it goes live. No spam, just the launch.",
     },
     survey: {
-      eyebrow: "Help shape Payyo",
+      eyebrow: "Help shape Payo",
       title: "Got 2 minutes?",
       subtitle: "We're building this for you. Tell us how you split bills today and what would make this a no-brainer to use.",
       cta: "Take the 2-minute survey",
-      thanks: "Survey link coming soon — thanks for the interest!",
+      thanks: "Thanks for taking the survey!",
     },
     footer: {
-      note: "© 2026 Payyo · Split the bill. Skip the headache.",
+      note: "© 2026 Payo · Split the bill. Skip the headache.",
     },
   },
   nl: {
     meta: {
-      title: "Payyo — Split de rekening. Sla het gedoe over.",
+      title: "Payo — Split de rekening. Sla het gedoe over.",
       description:
-        "Eén persoon betaalt, iedereen betaalt zijn deel terug, niemand moet afrekenen. Payyo laat het hele \"wie had wat\"-moment verdwijnen.",
+        "Eén persoon betaalt, iedereen betaalt zijn deel terug, niemand moet afrekenen. Payo laat het hele \"wie had wat\"-moment verdwijnen.",
     },
     nav: {
       join: "Meld je aan",
@@ -190,43 +190,43 @@ export const translations: Record<Locale, Translation> = {
       eyebrow: "In ontwikkeling · binnenkort live",
       titleLine1: "Split de rekening.",
       titleHighlight: "Sla<br />het gedoe over.",
-      lede: "Elke keer als je met vrienden uit eten gaat, betaalt iemand de hele rekening voor. Daarna volgt de groepsapp: wie had wat? Payyo maakt daar een einde aan. Scan de bon, iedereen tikt aan wat ze hadden, en je bent klaar.",
+      lede: "Elke keer als je met vrienden uit eten gaat, betaalt iemand de hele rekening voor. Daarna volgt de groepsapp: wie had wat? Payo maakt daar een einde aan. Scan de bon, iedereen tikt aan wat ze hadden, en je bent klaar.",
     },
     signup: {
       placeholder: "jij@email.com",
       button: "Meld je aan",
       alreadyJoined: "Je staat al op de lijst. We hebben je gegevens.",
-      willEmail: (email) => `We mailen ${email} zodra Payyo live gaat.`,
+      willEmail: (email) => `We mailen ${email} zodra Payo live gaat.`,
       successTitle: "Je staat op de lijst!",
     },
     howItWorks: {
       eyebrow: "Zo werkt het",
       title: "Vier tikjes van bon tot afgerekend",
-      subtitle: "Geen handmatig invoeren. Geen apps wisselen. Geen hoofdrekenen tijdens de brunch.",
+      subtitle: "Geen handmatig invoeren. Geen apps wisselen. Geen hoofdrekenen tijdens de lunch.",
       steps: [
         { title: "Scan de bon", description: "AI leest elke regel, gerechten, drankjes, btw en fooi in ongeveer een seconde." },
-        { title: "Sluit je aan bij de tafel", description: "Vrienden sluiten direct aan via een QR-code of een gedeelde link." },
-        { title: "Kies wat je had", description: "Tik je items aan. Een fles gedeeld? Verdeel hem in één tik over de tafel." },
+        { title: "Nodig mensen uit voor de digitale bon", description: "Vrienden sluiten direct aan via een QR-code of een gedeelde link." },
+        { title: "Kies wat je had", description: "Tik je items aan. Een fles gedeeld? Verdeel hem met een vriend in één tik." },
         { title: "Betaal je deel", description: "Met één tik is alles afgerekend. Iedereen quitte voordat je de tafel verlaat." },
       ],
     },
-    whyPayyo: {
-      eyebrow: "Waarom Payyo",
+    whyPayo: {
+      eyebrow: "Waarom Payo",
       title: "Het einde van “stuur me anders even een Tikkie”",
-      subtitle: "De oude manier is traag en onhandig. Payyo lost het direct op.",
+      subtitle: "De oude manier is traag en onhandig. Payo lost het direct op.",
       oldWayTag: "De oude manier",
-      newWayTag: "Met Payyo",
+      newWayTag: "Met Payo",
       oldWayItems: [
         "Eén persoon legt de hele rekening voor en hoopt op het beste.",
         "Screenshots, groepsapps en hoofdrekenen aan tafel.",
         'Wekenlang vrienden achternazitten "heb je dat nog overgemaakt?"',
-        "Gelijk verdelen, ook als jij maar één drankje had.",
+        "Jij betaalt evenveel als iedereen, terwijl jij maar één drankje had.",
       ],
       newWayItems: [
         "Iedereen betaalt direct precies zijn eigen deel.",
-        "AI specificeert de bon. Geen typen, geen gokken.",
+        "AI digitaliseert de bon. Geen getyp, geen afronden.",
         "Afgerekend aan tafel, voordat je je jas hebt gepakt.",
-        "Betaal precies wat je besteld hebt. Eerlijk, elke keer.",
+        "Geen rekenmachine nodig. Klik gewoon aan wat je hebt besteld.",
       ],
     },
     features: {
@@ -239,23 +239,23 @@ export const translations: Record<Locale, Translation> = {
           pillTag: "AI-aangedreven",
         },
         {
-          title: "Direct aansluiten bij de tafel",
-          description: "Scan de QR-code of deel de link met je vrienden. Iedereen doet binnen seconden mee.",
+          title: "Direct een digitale bon",
+          description: "Scan de QR-code of deel de link en iedereen heeft binnen seconden de digitale bon.",
         },
         {
-          title: "Iets gedeeld?",
-          description: "Verdeel elk item tussen iedereen die het had. Geen ongemakkelijk rekenwerk, gewoon tikken en delen.",
+          title: "Verdeel elk item",
+          description: "Had je maar een deel van een gerecht? Betaal jouw deel, je vriend betaalt de rest. Geen ongemakkelijk rekenwerk, gewoon tikken en verdelen.",
         },
         {
           title: "Overal te gebruiken",
-          description: "Payyo in het buitenland gebruiken? Staat de bon in een andere taal? Payyo vertaalt hem naar jouw voorkeurstaal.",
+          description: "Payo in het buitenland gebruiken? Staat de bon in een andere taal? Payo vertaalt hem naar jouw voorkeurstaal.",
         },
       ],
     },
     video: {
       eyebrow: "Bekijk het in 40 seconden",
-      title: "Bekijk hoe Payyo werkt",
-      subtitle: "Bekijk hoe Payyo werkt en zie hoe makkelijk rekeningen splitten wordt",
+      title: "Bekijk hoe Payo werkt",
+      subtitle: "Bekijk hoe Payo werkt en zie hoe makkelijk rekeningen splitten wordt",
       playAria: "Speel uitlegvideo (binnenkort beschikbaar)",
       caption: "Uitlegvideo · binnenkort beschikbaar",
     },
@@ -265,14 +265,14 @@ export const translations: Record<Locale, Translation> = {
       subtitle: "Laat je e-mailadres achter en we laten het je weten zodra we live gaan. Geen spam, alleen de lancering.",
     },
     survey: {
-      eyebrow: "Help Payyo vormgeven",
+      eyebrow: "Help Payo vormgeven",
       title: "Heb je 2 minuutjes?",
       subtitle: "We bouwen dit voor jou. Vertel ons hoe je nu rekeningen splitst en wat dit voor jou een no-brainer zou maken.",
       cta: "Doe de 2-minuten enquête",
-      thanks: "Enquêtelink volgt binnenkort — bedankt voor je interesse!",
+      thanks: "Bedankt voor het invullen!",
     },
     footer: {
-      note: "© 2026 Payyo · Split de rekening. Sla het gedoe over.",
+      note: "© 2026 Payo · Split de rekening. Sla het gedoe over.",
     },
   },
 };

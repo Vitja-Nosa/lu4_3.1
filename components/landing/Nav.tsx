@@ -20,7 +20,7 @@ export function Nav() {
       <div className="wrap">
         <a className="brand" href="#top">
           <Logo />
-          <b>Payyo</b>
+          <b>Payo</b>
         </a>
         <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
           <button
