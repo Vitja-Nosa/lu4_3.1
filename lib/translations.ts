@@ -133,7 +133,7 @@ export const translations: Record<Locale, Translation> = {
     },
     features: {
       eyebrow: "Built different",
-      title: "Fast where it counts, fun where it doesn’t",
+      title: "Fast where it counts",
       items: [
         {
           title: "Receipt scanning",
@@ -231,7 +231,7 @@ export const translations: Record<Locale, Translation> = {
     },
     features: {
       eyebrow: "Anders gebouwd",
-      title: "Snel waar het telt, leuk waar het kan",
+      title: "Snel waar het telt",
       items: [
         {
           title: "Bonscanning",
