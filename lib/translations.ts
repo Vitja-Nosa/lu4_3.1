@@ -125,10 +125,10 @@ export const translations: Record<Locale, Translation> = {
         "Splitting evenly even though you only had one drink.",
       ],
       newWayItems: [
-        "Everyone pays their exact share, instantly.",
-        "AI itemises the receipt. no typing, no guessing.",
-        "Settled at the table, before you've grabbed your coat.",
-        "Pay for exactly what you ordered. Fair, every time.",
+        "No one's stuck floating the bill and hoping to get paid back.",
+        "One shared view everyone can see, no more screenshots flying around.",
+        "No awkward follow-up texts. Everyone's already settled.",
+        "You only ever pay for what actually crossed your table.",
       ],
     },
     features: {
@@ -137,12 +137,12 @@ export const translations: Record<Locale, Translation> = {
       items: [
         {
           title: "Receipt scanning",
-          description: 'Scan once and every item is captured. No manual entry, no "who had the fries?"',
+          description: "Handles faded thermal paper, handwritten totals and long receipts just as easily as short ones.",
           pillTag: "AI Powered",
         },
         {
           title: "Instant digital receipt",
-          description: "Scan the QR code or share the link and everyone gets the digital receipt in seconds.",
+          description: "Everyone's view updates in real time, no refreshing, no wondering if someone's still adding items.",
         },
         {
           title: "Split any item",
@@ -157,7 +157,7 @@ export const translations: Record<Locale, Translation> = {
     video: {
       eyebrow: "See it in 40 seconds",
       title: "Watch how Payo works",
-      subtitle: "Watch how Payo works and see how easy splitting bills becomes",
+      subtitle: "From messy receipt to fully settled bill, start to finish.",
       playAria: "Play explainer (coming soon)",
       caption: "Explainer animation · coming soon",
     },
@@ -223,10 +223,10 @@ export const translations: Record<Locale, Translation> = {
         "Jij betaalt evenveel als iedereen, terwijl jij maar één drankje had.",
       ],
       newWayItems: [
-        "Iedereen betaalt direct precies zijn eigen deel.",
-        "AI digitaliseert de bon. Geen getyp, geen afronden.",
-        "Afgerekend aan tafel, voordat je je jas hebt gepakt.",
-        "Geen rekenmachine nodig. Klik gewoon aan wat je hebt besteld.",
+        "Niemand blijft achter met een voorgeschoten rekening en de hoop op terugbetaling.",
+        "Eén gedeeld overzicht voor iedereen, geen rondzwervende screenshots meer.",
+        "Geen ongemakkelijke herinneringsappjes. Iedereen heeft al afgerekend.",
+        "Je betaalt alleen voor wat er echt op jouw bordje stond.",
       ],
     },
     features: {
@@ -235,12 +235,12 @@ export const translations: Record<Locale, Translation> = {
       items: [
         {
           title: "Bonscanning",
-          description: 'Eén keer scannen en elk item is vastgelegd. Geen handmatig invoeren, geen "wie had de friet?"',
+          description: "Werkt net zo goed bij vervaagd thermisch papier, handgeschreven totalen en lange bonnen als bij korte.",
           pillTag: "AI-aangedreven",
         },
         {
           title: "Direct een digitale bon",
-          description: "Scan de QR-code of deel de link en iedereen heeft binnen seconden de digitale bon.",
+          description: "Het overzicht van iedereen wordt live bijgewerkt, geen vernieuwen, geen afvragen of iemand nog iets toevoegt.",
         },
         {
           title: "Verdeel elk item",
@@ -255,7 +255,7 @@ export const translations: Record<Locale, Translation> = {
     video: {
       eyebrow: "Bekijk het in 40 seconden",
       title: "Bekijk hoe Payo werkt",
-      subtitle: "Bekijk hoe Payo werkt en zie hoe makkelijk rekeningen splitten wordt",
+      subtitle: "Van rommelige bon tot volledig afgerekend, van begin tot eind.",
       playAria: "Speel uitlegvideo (binnenkort beschikbaar)",
       caption: "Uitlegvideo · binnenkort beschikbaar",
     },
