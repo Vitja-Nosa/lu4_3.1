@@ -230,7 +230,7 @@ export const translations: Record<Locale, Translation> = {
       ],
     },
     features: {
-      eyebrow: "Functies",
+      eyebrow: "Features",
       title: "Snel waar het telt",
       items: [
         {

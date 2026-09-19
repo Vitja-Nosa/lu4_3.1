@@ -9,6 +9,11 @@ const socials = [
   // { label: "X", icon: "ph-fill ph-x-logo" },
 ];
 
+const commitSha = process.env.NEXT_PUBLIC_COMMIT_SHA;
+const buildTime = process.env.NEXT_PUBLIC_BUILD_TIME;
+const versionLabel = commitSha ? commitSha.slice(0, 7) : "dev";
+const versionTitle = buildTime ? `Built ${new Date(buildTime).toLocaleString()}` : undefined;
+
 export function Footer() {
   const { t } = useLanguage();
 
@@ -27,6 +32,9 @@ export function Footer() {
           ))}
         </div>
         <span className="foot-note">{t.footer.note}</span>
+        <span className="foot-version" title={versionTitle}>
+          v{versionLabel}
+        </span>
       </div>
     </footer>
   );

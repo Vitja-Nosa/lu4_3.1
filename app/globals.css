@@ -929,6 +929,13 @@ footer .wrap {
   font-size: 13px;
 }
 
+.foot-version {
+  color: var(--text-subtle);
+  font-size: 11px;
+  font-family: monospace;
+  opacity: 0.6;
+}
+
 /* ---- Responsive ---- */
 @media (min-width: 700px) {
   .steps-grid {

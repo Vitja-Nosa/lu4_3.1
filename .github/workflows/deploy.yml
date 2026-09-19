@@ -26,6 +26,8 @@ jobs:
         env:
           NEXT_PUBLIC_SUPABASE_URL: https://tnvjjoeqybscsqybzvpl.supabase.co
           NEXT_PUBLIC_SUPABASE_ANON_KEY: sb_publishable_5CYID8isMj3qp_Y1JzZLYw_QgD9p-OU
+          NEXT_PUBLIC_COMMIT_SHA: ${{ github.sha }}
+          NEXT_PUBLIC_BUILD_TIME: ${{ github.event.head_commit.timestamp }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
