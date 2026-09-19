@@ -22,7 +22,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Payo — Split the bill. Skip the awkward.",
+  title: "Payo: Split the bill. Skip the awkward.",
   description:
     "One person pays, everyone owes, nobody settles up. Payo makes the whole \"who had what\" moment vanish.",
 };

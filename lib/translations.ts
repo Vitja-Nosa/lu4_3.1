@@ -81,7 +81,7 @@ export type Translation = {
 export const translations: Record<Locale, Translation> = {
   en: {
     meta: {
-      title: "Payo — Split the bill. Skip the awkward.",
+      title: "Payo: Split the bill. Skip the awkward.",
       description:
         "One person pays, everyone owes, nobody settles up. Payo makes the whole \"who had what\" moment vanish.",
     },
@@ -125,7 +125,7 @@ export const translations: Record<Locale, Translation> = {
         "Splitting evenly even though you only had one drink.",
       ],
       newWayItems: [
-        "No one's stuck floating the bill and hoping to get paid back.",
+        "No one's stuck fronting the bill and hoping to get paid back.",
         "One shared view everyone can see, no more screenshots flying around.",
         "No awkward follow-up texts. Everyone's already settled.",
         "You only ever pay for what actually crossed your table.",
@@ -137,7 +137,7 @@ export const translations: Record<Locale, Translation> = {
       items: [
         {
           title: "Receipt scanning",
-          description: "Handles faded thermal paper, handwritten totals and long receipts just as easily as short ones.",
+          description: 'Scan once and every item is captured. No manual entry, no "who had the fries?"',
           pillTag: "AI Powered",
         },
         {
@@ -179,7 +179,7 @@ export const translations: Record<Locale, Translation> = {
   },
   nl: {
     meta: {
-      title: "Payo — Split de rekening. Sla het gedoe over.",
+      title: "Payo: Split de rekening. Sla het gedoe over.",
       description:
         "Eén persoon betaalt, iedereen betaalt zijn deel terug, niemand moet afrekenen. Payo laat het hele \"wie had wat\"-moment verdwijnen.",
     },
@@ -235,7 +235,7 @@ export const translations: Record<Locale, Translation> = {
       items: [
         {
           title: "Bonscanning",
-          description: "Werkt net zo goed bij vervaagd thermisch papier, handgeschreven totalen en lange bonnen als bij korte.",
+          description: 'Eén keer scannen en elk item is vastgelegd. Geen handmatig invoeren, geen "wie had de friet?"',
           pillTag: "AI-aangedreven",
         },
         {
